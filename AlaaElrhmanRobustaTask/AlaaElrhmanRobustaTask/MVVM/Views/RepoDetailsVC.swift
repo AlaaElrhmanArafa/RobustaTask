@@ -9,6 +9,7 @@ import UIKit
 
 class RepoDetailsVC: UIViewController {
     
+    @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var authorImageView: UIImageView!
     @IBOutlet weak var authorNameLabel: UILabel!
@@ -17,7 +18,6 @@ class RepoDetailsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         setupUI()
     }
     

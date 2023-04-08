@@ -15,6 +15,7 @@
                 <outlet property="dateLabel" destination="QRF-al-fAz" id="7FL-03-yty"/>
                 <outlet property="descriptionTextView" destination="qlW-bZ-qYV" id="dEd-cy-6kn"/>
                 <outlet property="repoNameLabel" destination="MkD-m0-4Oy" id="HGv-aQ-aYu"/>
+                <outlet property="typeLabel" destination="FWq-Vf-ujI" id="pYd-dI-5gb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,8 +28,8 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="59"/>
                     <color key="backgroundColor" systemColor="systemMintColor"/>
                 </view>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Wkd-Xc-r3U">
-                    <rect key="frame" x="10" y="71" width="373" height="68"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Wkd-Xc-r3U">
+                    <rect key="frame" x="10" y="71" width="373" height="72.666666666666686"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="oiO-B4-IlR">
                             <rect key="frame" x="0.0" y="0.0" width="373" height="24"/>
@@ -47,8 +48,8 @@
                                 </label>
                             </subviews>
                         </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="u3o-OQ-HIq">
-                            <rect key="frame" x="0.0" y="28" width="373" height="40"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="u3o-OQ-HIq">
+                            <rect key="frame" x="0.0" y="29.999999999999996" width="373" height="42.666666666666657"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gitLogo" translatesAutoresizingMaskIntoConstraints="NO" id="A3Y-gq-VnY">
                                     <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -70,18 +71,29 @@
                                         <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                     </userDefinedRuntimeAttributes>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Z4-rW-m94">
-                                    <rect key="frame" x="45" y="0.0" width="328" height="40"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                    <color key="textColor" systemColor="systemGray2Color"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="VRR-pA-aQL">
+                                    <rect key="frame" x="45" y="0.0" width="328" height="42.666666666666664"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Z4-rW-m94">
+                                            <rect key="frame" x="0.0" y="0.0" width="328" height="19.333333333333332"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" systemColor="systemGray2Color"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWq-Vf-ujI">
+                                            <rect key="frame" x="0.0" y="23.333333333333329" width="328" height="19.333333333333329"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" systemColor="systemGray2Color"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
                             </subviews>
                         </stackView>
                     </subviews>
                 </stackView>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qlW-bZ-qYV">
-                    <rect key="frame" x="10" y="159" width="373" height="649"/>
+                    <rect key="frame" x="10" y="163.66666666666669" width="373" height="644.33333333333326"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                     <color key="textColor" systemColor="labelColor"/>
