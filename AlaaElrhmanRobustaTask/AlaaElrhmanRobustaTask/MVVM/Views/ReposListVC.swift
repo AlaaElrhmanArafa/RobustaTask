@@ -8,12 +8,13 @@
 import UIKit
 
 class ReposListVC: UIViewController {
-    
+    //MARK: - outlets and variables
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var reposTableView: UITableView!
     
     let viewModel = ReposListViewModel(apiService: Service())
     
+    //MARK: - viewLifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         registerNibs()
@@ -31,6 +32,7 @@ class ReposListVC: UIViewController {
         self.navigationController?.navigationBar.tintColor = .white
     }
     
+    //MARK: - bind to viewModel
     private func bindViewModel(){
         viewModel.reloadTableClosure = { [weak self] () in
             DispatchQueue.main.async {
@@ -80,5 +82,16 @@ extension ReposListVC: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
+    }
+}
+// MARK: - search bar delegate
+extension ReposListVC: UISearchBarDelegate{
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        self.viewModel.search(with: searchText)
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        self.view.endEditing(true)
+        self.viewModel.clearSearch()
     }
 }

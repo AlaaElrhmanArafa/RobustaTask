@@ -55,7 +55,7 @@ extension SceneDelegate{
     func naviagateToMainScreen(){
         let reposViewController = ReposListVC()
         let navigationVC = UINavigationController(rootViewController: reposViewController)
-        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.clear], for: .normal)
+        UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffset(horizontal: -1000, vertical: 0), for:UIBarMetrics.default)
         window?.rootViewController = navigationVC
         window?.makeKeyAndVisible()
     }

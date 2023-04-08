@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zdE-QA-4P1">
-                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="oog-Fy-Rmb"/>
@@ -36,15 +36,33 @@
                     <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
                     <color key="color" systemColor="systemMintColor"/>
                 </activityIndicatorView>
+                <searchBar contentMode="redraw" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SBN-UF-lY3">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Q7d-L8-C4e"/>
+                    </constraints>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                    <scopeButtonTitles>
+                        <string>Title</string>
+                        <string>Title</string>
+                    </scopeButtonTitles>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="fJt-HP-du7"/>
+                    </connections>
+                </searchBar>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="PN9-T2-4pu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3FW-pf-dw3"/>
+                <constraint firstItem="SBN-UF-lY3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3JB-Z2-t6J"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zdE-QA-4P1" secondAttribute="bottom" id="DlF-Bn-W7I"/>
-                <constraint firstItem="zdE-QA-4P1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="JTI-4D-fXr"/>
+                <constraint firstItem="SBN-UF-lY3" firstAttribute="top" secondItem="PN9-T2-4pu" secondAttribute="bottom" id="IuI-uh-cXZ"/>
+                <constraint firstItem="zdE-QA-4P1" firstAttribute="top" secondItem="SBN-UF-lY3" secondAttribute="bottom" id="JTI-4D-fXr"/>
                 <constraint firstItem="PN9-T2-4pu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Kiv-S1-2jo"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zdE-QA-4P1" secondAttribute="trailing" id="apb-Ie-TVD"/>
+                <constraint firstItem="SBN-UF-lY3" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="f57-bU-GhY"/>
                 <constraint firstItem="zdE-QA-4P1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ifg-kG-Pzu"/>
                 <constraint firstItem="PmX-Jv-lDT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jBK-Ww-yMR"/>
                 <constraint firstAttribute="trailing" secondItem="PN9-T2-4pu" secondAttribute="trailing" id="p95-Wf-AI3"/>

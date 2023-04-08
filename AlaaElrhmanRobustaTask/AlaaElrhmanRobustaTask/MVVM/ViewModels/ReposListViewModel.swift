@@ -49,7 +49,18 @@ class ReposListViewModel {
         return cellViewModels[indexPath.row]
     }
     
+    func search(with searchWord: String){
+        guard searchWord != "" else{
+            clearSearch()
+            return
+        }
+        let searchedRepos = repos.filter({$0.fullName?.contains(searchWord) ?? false})
+        self.cellViewModels = searchedRepos.map({return RepoViewModel(repo: $0)})
+    }
     
+    func clearSearch(){
+        self.cellViewModels = repos.map({return RepoViewModel(repo: $0)})
+    }
     
     //MARK: - FetchData
     func fetchReposList(){
