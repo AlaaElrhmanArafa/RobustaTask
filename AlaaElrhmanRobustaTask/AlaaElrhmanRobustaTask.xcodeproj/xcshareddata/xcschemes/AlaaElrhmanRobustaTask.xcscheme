@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1420"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "73131AAC29E0D3EE0019821A"
+               BuildableName = "AlaaElrhmanRobustaTask.app"
+               BlueprintName = "AlaaElrhmanRobustaTask"
+               ReferencedContainer = "container:AlaaElrhmanRobustaTask.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "73131AAC29E0D3EE0019821A"
+            BuildableName = "AlaaElrhmanRobustaTask.app"
+            BlueprintName = "AlaaElrhmanRobustaTask"
+            ReferencedContainer = "container:AlaaElrhmanRobustaTask.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "73131AC229E0D3EF0019821A"
+            BuildableName = "AlaaElrhmanRobustaTaskTests.xctest"
+            BlueprintName = "AlaaElrhmanRobustaTaskTests"
+            ReferencedContainer = "container:AlaaElrhmanRobustaTask.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
+      <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "73131AC229E0D3EF0019821A"
+               BuildableName = "AlaaElrhmanRobustaTaskTests.xctest"
+               BlueprintName = "AlaaElrhmanRobustaTaskTests"
+               ReferencedContainer = "container:AlaaElrhmanRobustaTask.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "73131ACC29E0D3EF0019821A"
+               BuildableName = "AlaaElrhmanRobustaTaskUITests.xctest"
+               BlueprintName = "AlaaElrhmanRobustaTaskUITests"
+               ReferencedContainer = "container:AlaaElrhmanRobustaTask.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "73131AAC29E0D3EE0019821A"
+            BuildableName = "AlaaElrhmanRobustaTask.app"
+            BlueprintName = "AlaaElrhmanRobustaTask"
+            ReferencedContainer = "container:AlaaElrhmanRobustaTask.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "73131AAC29E0D3EE0019821A"
+            BuildableName = "AlaaElrhmanRobustaTask.app"
+            BlueprintName = "AlaaElrhmanRobustaTask"
+            ReferencedContainer = "container:AlaaElrhmanRobustaTask.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

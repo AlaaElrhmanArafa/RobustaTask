@@ -29,17 +29,14 @@
 		73131B0D29E1C7000019821A /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73131B0C29E1C7000019821A /* UIImageView+Ext.swift */; };
 		73131B1129E1F4830019821A /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73131B1029E1F4830019821A /* UIViewController+Ext.swift */; };
 		73131B1329E1F6780019821A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73131B1229E1F6780019821A /* Main.storyboard */; };
+		73131B1729E20C880019821A /* ReposListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73131B1629E20C880019821A /* ReposListViewModel.swift */; };
+		73131B1929E20FA10019821A /* APIServiceMoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73131B1829E20FA10019821A /* APIServiceMoc.swift */; };
+		73131B1B29E2123E0019821A /* RepoMocModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73131B1A29E2123E0019821A /* RepoMocModel.swift */; };
+		73131B2129E21B180019821A /* RepoViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73131B2029E21B180019821A /* RepoViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		73131AC429E0D3EF0019821A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 73131AA529E0D3EE0019821A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 73131AAC29E0D3EE0019821A;
-			remoteInfo = AlaaElrhmanRobustaTask;
-		};
-		73131ACE29E0D3EF0019821A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 73131AA529E0D3EE0019821A /* Project object */;
 			proxyType = 1;
@@ -57,7 +54,6 @@
 		73131ABE29E0D3EE0019821A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73131AC329E0D3EF0019821A /* AlaaElrhmanRobustaTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlaaElrhmanRobustaTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73131AC729E0D3EF0019821A /* AlaaElrhmanRobustaTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlaaElrhmanRobustaTaskTests.swift; sourceTree = "<group>"; };
-		73131ACD29E0D3EF0019821A /* AlaaElrhmanRobustaTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlaaElrhmanRobustaTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73131AE329E0D5C80019821A /* ReposListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListVC.swift; sourceTree = "<group>"; };
 		73131AE429E0D5C80019821A /* ReposListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReposListVC.xib; sourceTree = "<group>"; };
 		73131AE829E0D70A0019821A /* RepoTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTVCell.swift; sourceTree = "<group>"; };
@@ -75,6 +71,10 @@
 		73131B0C29E1C7000019821A /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
 		73131B1029E1F4830019821A /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		73131B1229E1F6780019821A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		73131B1629E20C880019821A /* ReposListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListViewModel.swift; sourceTree = "<group>"; };
+		73131B1829E20FA10019821A /* APIServiceMoc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceMoc.swift; sourceTree = "<group>"; };
+		73131B1A29E2123E0019821A /* RepoMocModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoMocModel.swift; sourceTree = "<group>"; };
+		73131B2029E21B180019821A /* RepoViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,13 +92,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		73131ACA29E0D3EF0019821A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -106,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				73131AAF29E0D3EE0019821A /* AlaaElrhmanRobustaTask */,
+				73131B1D29E217520019821A /* AlaaElrhmanRobustaTaskUITests */,
 				73131AC629E0D3EF0019821A /* AlaaElrhmanRobustaTaskTests */,
 				73131AAE29E0D3EE0019821A /* Products */,
 			);
@@ -116,7 +110,6 @@
 			children = (
 				73131AAD29E0D3EE0019821A /* AlaaElrhmanRobustaTask.app */,
 				73131AC329E0D3EF0019821A /* AlaaElrhmanRobustaTaskTests.xctest */,
-				73131ACD29E0D3EF0019821A /* AlaaElrhmanRobustaTaskUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,6 +134,10 @@
 			isa = PBXGroup;
 			children = (
 				73131AC729E0D3EF0019821A /* AlaaElrhmanRobustaTaskTests.swift */,
+				73131B1629E20C880019821A /* ReposListViewModel.swift */,
+				73131B2029E21B180019821A /* RepoViewModelTests.swift */,
+				73131B1829E20FA10019821A /* APIServiceMoc.swift */,
+				73131B1A29E2123E0019821A /* RepoMocModel.swift */,
 			);
 			path = AlaaElrhmanRobustaTaskTests;
 			sourceTree = "<group>";
@@ -246,6 +243,13 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		73131B1D29E217520019821A /* AlaaElrhmanRobustaTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AlaaElrhmanRobustaTaskUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -284,24 +288,6 @@
 			productReference = 73131AC329E0D3EF0019821A /* AlaaElrhmanRobustaTaskTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		73131ACC29E0D3EF0019821A /* AlaaElrhmanRobustaTaskUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 73131ADD29E0D3EF0019821A /* Build configuration list for PBXNativeTarget "AlaaElrhmanRobustaTaskUITests" */;
-			buildPhases = (
-				73131AC929E0D3EF0019821A /* Sources */,
-				73131ACA29E0D3EF0019821A /* Frameworks */,
-				73131ACB29E0D3EF0019821A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				73131ACF29E0D3EF0019821A /* PBXTargetDependency */,
-			);
-			name = AlaaElrhmanRobustaTaskUITests;
-			productName = AlaaElrhmanRobustaTaskUITests;
-			productReference = 73131ACD29E0D3EF0019821A /* AlaaElrhmanRobustaTaskUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -316,10 +302,6 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					73131AC229E0D3EF0019821A = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 73131AAC29E0D3EE0019821A;
-					};
-					73131ACC29E0D3EF0019821A = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 73131AAC29E0D3EE0019821A;
 					};
@@ -340,7 +322,6 @@
 			targets = (
 				73131AAC29E0D3EE0019821A /* AlaaElrhmanRobustaTask */,
 				73131AC229E0D3EF0019821A /* AlaaElrhmanRobustaTaskTests */,
-				73131ACC29E0D3EF0019821A /* AlaaElrhmanRobustaTaskUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -360,13 +341,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		73131AC129E0D3EF0019821A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		73131ACB29E0D3EF0019821A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -402,14 +376,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73131B1729E20C880019821A /* ReposListViewModel.swift in Sources */,
 				73131AC829E0D3EF0019821A /* AlaaElrhmanRobustaTaskTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		73131AC929E0D3EF0019821A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				73131B1929E20FA10019821A /* APIServiceMoc.swift in Sources */,
+				73131B2129E21B180019821A /* RepoViewModelTests.swift in Sources */,
+				73131B1B29E2123E0019821A /* RepoMocModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,11 +391,6 @@
 			isa = PBXTargetDependency;
 			target = 73131AAC29E0D3EE0019821A /* AlaaElrhmanRobustaTask */;
 			targetProxy = 73131AC429E0D3EF0019821A /* PBXContainerItemProxy */;
-		};
-		73131ACF29E0D3EF0019821A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 73131AAC29E0D3EE0019821A /* AlaaElrhmanRobustaTask */;
-			targetProxy = 73131ACE29E0D3EF0019821A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -617,7 +583,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WV83VT787A;
+				DEVELOPMENT_TEAM = KDQQK78HLP;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
@@ -637,7 +603,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WV83VT787A;
+				DEVELOPMENT_TEAM = KDQQK78HLP;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
@@ -647,42 +613,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlaaElrhmanRobustaTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AlaaElrhmanRobustaTask";
-			};
-			name = Release;
-		};
-		73131ADE29E0D3EF0019821A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WV83VT787A;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.alaaArafa.robustaTask.AlaaElrhmanRobustaTaskUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AlaaElrhmanRobustaTask;
-			};
-			name = Debug;
-		};
-		73131ADF29E0D3EF0019821A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WV83VT787A;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.alaaArafa.robustaTask.AlaaElrhmanRobustaTaskUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AlaaElrhmanRobustaTask;
 			};
 			name = Release;
 		};
@@ -712,15 +642,6 @@
 			buildConfigurations = (
 				73131ADB29E0D3EF0019821A /* Debug */,
 				73131ADC29E0D3EF0019821A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		73131ADD29E0D3EF0019821A /* Build configuration list for PBXNativeTarget "AlaaElrhmanRobustaTaskUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				73131ADE29E0D3EF0019821A /* Debug */,
-				73131ADF29E0D3EF0019821A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
