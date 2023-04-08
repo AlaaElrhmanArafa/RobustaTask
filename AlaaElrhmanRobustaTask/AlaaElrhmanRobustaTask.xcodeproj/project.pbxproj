@@ -20,6 +20,8 @@
 		73131AEA29E0D70A0019821A /* RepoTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73131AE829E0D70A0019821A /* RepoTVCell.swift */; };
 		73131AEB29E0D70A0019821A /* RepoTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73131AE929E0D70A0019821A /* RepoTVCell.xib */; };
 		73131AEF29E0D7400019821A /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73131AEE29E0D7400019821A /* UITableView+Ext.swift */; };
+		73131AF629E18C3E0019821A /* RepoDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73131AF429E18C3E0019821A /* RepoDetailsVC.swift */; };
+		73131AF729E18C3E0019821A /* RepoDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73131AF529E18C3E0019821A /* RepoDetailsVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		73131AE829E0D70A0019821A /* RepoTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTVCell.swift; sourceTree = "<group>"; };
 		73131AE929E0D70A0019821A /* RepoTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoTVCell.xib; sourceTree = "<group>"; };
 		73131AEE29E0D7400019821A /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		73131AF429E18C3E0019821A /* RepoDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailsVC.swift; sourceTree = "<group>"; };
+		73131AF529E18C3E0019821A /* RepoDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoDetailsVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,9 +186,27 @@
 		73131AF129E184EB0019821A /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				73131AF229E18BA60019821A /* RepoDetails */,
 				73131AE129E0D5850019821A /* ReposList */,
 			);
 			path = MVVM;
+			sourceTree = "<group>";
+		};
+		73131AF229E18BA60019821A /* RepoDetails */ = {
+			isa = PBXGroup;
+			children = (
+				73131AF329E18BD80019821A /* Views */,
+			);
+			path = RepoDetails;
+			sourceTree = "<group>";
+		};
+		73131AF329E18BD80019821A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				73131AF429E18C3E0019821A /* RepoDetailsVC.swift */,
+				73131AF529E18C3E0019821A /* RepoDetailsVC.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +316,7 @@
 				73131ABD29E0D3EE0019821A /* LaunchScreen.storyboard in Resources */,
 				73131ABA29E0D3EE0019821A /* Assets.xcassets in Resources */,
 				73131AE629E0D5C80019821A /* ReposListVC.xib in Resources */,
+				73131AF729E18C3E0019821A /* RepoDetailsVC.xib in Resources */,
 				73131AB829E0D3EE0019821A /* Main.storyboard in Resources */,
 				73131AEB29E0D70A0019821A /* RepoTVCell.xib in Resources */,
 			);
@@ -321,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73131AE529E0D5C80019821A /* ReposListVC.swift in Sources */,
+				73131AF629E18C3E0019821A /* RepoDetailsVC.swift in Sources */,
 				73131AB129E0D3EE0019821A /* AppDelegate.swift in Sources */,
 				73131AEF29E0D7400019821A /* UITableView+Ext.swift in Sources */,
 				73131AB329E0D3EE0019821A /* SceneDelegate.swift in Sources */,

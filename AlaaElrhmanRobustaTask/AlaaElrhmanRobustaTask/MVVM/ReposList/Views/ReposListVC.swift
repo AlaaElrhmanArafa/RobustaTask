@@ -41,4 +41,9 @@ extension ReposListVC: UITableViewDelegate, UITableViewDataSource{
     }
     
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = RepoDetailsVC()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
