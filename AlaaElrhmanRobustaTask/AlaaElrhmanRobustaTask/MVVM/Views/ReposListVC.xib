@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReposListVC" customModule="AlaaElrhmanRobustaTask" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="PmX-Jv-lDT" id="s0a-Af-q9f"/>
                 <outlet property="reposTableView" destination="zdE-QA-4P1" id="dsc-3b-iMX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -28,9 +29,13 @@
                     </connections>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PN9-T2-4pu">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="51"/>
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="59"/>
                     <color key="backgroundColor" systemColor="systemMintColor"/>
                 </view>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="PmX-Jv-lDT">
+                    <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                    <color key="color" systemColor="systemMintColor"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -40,9 +45,11 @@
                 <constraint firstItem="zdE-QA-4P1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="JTI-4D-fXr"/>
                 <constraint firstItem="PN9-T2-4pu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Kiv-S1-2jo"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zdE-QA-4P1" secondAttribute="trailing" id="apb-Ie-TVD"/>
-                <constraint firstItem="zdE-QA-4P1" firstAttribute="top" secondItem="PN9-T2-4pu" secondAttribute="bottom" constant="8" symbolic="YES" id="cAu-Qk-MJ7"/>
                 <constraint firstItem="zdE-QA-4P1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ifg-kG-Pzu"/>
+                <constraint firstItem="PmX-Jv-lDT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jBK-Ww-yMR"/>
                 <constraint firstAttribute="trailing" secondItem="PN9-T2-4pu" secondAttribute="trailing" id="p95-Wf-AI3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="PN9-T2-4pu" secondAttribute="bottom" id="xVd-Kj-QjW"/>
+                <constraint firstItem="PmX-Jv-lDT" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="zl2-9T-xCg"/>
             </constraints>
             <point key="canvasLocation" x="78.625954198473281" y="19.718309859154932"/>
         </view>

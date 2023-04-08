@@ -10,8 +10,9 @@ import UIKit
 
 extension UIImageView{
     func downloadImage(from url: URL) {
-        var activityIndicator = UIActivityIndicatorView()
+        let activityIndicator = UIActivityIndicatorView()
         activityIndicator.hidesWhenStopped = true
+        activityIndicator.center = self.center
         self.addSubview(activityIndicator)
         activityIndicator.startAnimating()
         
@@ -25,13 +26,16 @@ extension UIImageView{
     }
     
     private func getImageData(url: URL, complete: @escaping (_ data: Data?) -> Void){
-        let request = URLRequest(url: url)
         DispatchQueue.global().async {
+            let request = URLRequest(url: url)
             URLSession.shared.dataTask(with: request) { data, response, error in
-                guard let data = data, error == nil else { return }
+                guard let data = data, error == nil else {
+                    print("error in downloading image:\(error?.localizedDescription ?? "")")
+                    return
+                }
                 print(response?.suggestedFilename ?? url.lastPathComponent)
                 complete(data)
-            }
+            }.resume()
         }
     }
 }
